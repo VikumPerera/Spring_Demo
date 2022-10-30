@@ -6,7 +6,7 @@
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     
 	
-    <bean id="doctor" class="com.spring.demo.domain.Doctor"></bean>
+    <bean id="teacher" class="com.spring.demo.domain.Teacher"></bean>
     
     
 </beans>

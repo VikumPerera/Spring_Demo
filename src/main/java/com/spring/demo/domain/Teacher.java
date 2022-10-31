@@ -1,9 +1,20 @@
 package com.spring.demo.domain;
 
-public class Teacher {
+import javax.annotation.PostConstruct;
+
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.stereotype.Component;
+@Component
+public class Teacher implements BeanNameAware {
 	
-	public void teaching() {
-		System.out.println("Teacher teach to students...");
+	@Override
+	public void setBeanName(String name) {
+		System.out.println(name);
+	}
+	
+	@PostConstruct
+	public void postConstruct() {
+		System.out.println("Post Construct method is called...");
 	}
 	
 }
